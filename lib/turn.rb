@@ -7,7 +7,10 @@ def display_board(board)
 end
 
 def move(board, index, character)
-  board[index] = character
+  if valid_move(board, index)
+    board[index] = character
+  else
+    return false
 end
 
 def valid_move(board, index)
