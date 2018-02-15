@@ -2,6 +2,7 @@
 require_relative '../lib/turn'
 board = [" "," "," "," "," "," "," "," "," "]
 puts "Welcome to Tic Tac Toe!"
+move(board, 5, "X")
 if !move(board, 5, "X")
   puts "ERROR position 5 for x"
 end
