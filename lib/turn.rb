@@ -12,14 +12,14 @@ end
 
 def move(board, index, character)
   index = input_to_index(index)
-  if valid_move(board, index)
+  if valid_move?(board, index)
     board[index] = character
   else
     return false
   end
 end
 
-def valid_move(board, index)
+def valid_move?(board, index)
   if index.between?(0,8)
     if board[index] == "" || board[index] == " " || board[index] == nil 
       return true 
