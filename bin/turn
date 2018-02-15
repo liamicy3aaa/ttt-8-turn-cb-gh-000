@@ -3,7 +3,6 @@ require_relative '../lib/turn'
 board = [" "," "," "," "," "," "," "," "," "]
 puts "Welcome to Tic Tac Toe!"
 move(board, 5, "O")
-a = gets.strip
 if !move(board, 5, "X")
   puts "ERROR position 5 for x"
 end
