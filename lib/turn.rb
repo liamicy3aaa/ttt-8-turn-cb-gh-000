@@ -30,7 +30,7 @@ def turn(board)
   display_board(board)
   puts "Please enter 1-9:"
   input = gets.strip
-  index = input.to_i
+  index = input.to_i - 1
   move(board, index, "X")
   turn(board)
 end
