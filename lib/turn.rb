@@ -11,6 +11,7 @@ def move(board, index, character)
     board[index] = character
   else
     return false
+  end
 end
 
 def valid_move(board, index)
